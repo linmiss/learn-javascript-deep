@@ -52,7 +52,3 @@ function getColor1() {
     return color1;
 }
 console.log(getColor1()); // red
-
-
-
-'everybody';

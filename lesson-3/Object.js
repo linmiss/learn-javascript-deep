@@ -24,7 +24,8 @@ let colors2 = colors.slice(1, 2)
 /**
  * 删除  出入两个参数  第一个是起始位置 第二个是个数
  */
-//let colors1 = colors.splice(1, 2);
+let colors1 = colors.splice(1, 2);
+console.log(colors);//[ 'red', 'white', 'yellow' ]
 //console.log(colors1); //['grenn','pink']
 
 
@@ -41,6 +42,6 @@ let colors2 = colors.slice(1, 2)
  *  替换 3个参数 
  */
 
-let colors4 = colors.splice(2,1,'red','green');
-console.log(colors);//[ 'red', 'green', 'red', 'green', 'white', 'yellow' ]
-console.log(colors4);//[ 'pink' ]
+// let colors4 = colors.splice(2,1,'red','green');
+// console.log(colors);//[ 'red', 'green', 'red', 'green', 'white', 'yellow' ]
+// console.log(colors4);//[ 'pink' ]

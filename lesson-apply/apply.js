@@ -34,3 +34,4 @@ var x = makeAdder(5);
 var y = makeAdder(20);
 console.log(x(6)); //11
 console.log(y(7)); // 27
+console.log(makeAdder(1)(2));

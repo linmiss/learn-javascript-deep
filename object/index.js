@@ -2,19 +2,19 @@
  * 优化if else
  */
 
-if (color) {
-  if (color === 'black') {
-    printBlackBackground();
-  } else if (color === 'red') {
-    printRedBackground();
-  } else if (color === 'blue') {
-    printBlueBackground();
-  } else if (color === 'green') {
-    printGreenBackground();
-  } else {
-    printYellowBackground();
-  }
-}
+// if (color) {
+//   if (color === 'black') {
+//     printBlackBackground();
+//   } else if (color === 'red') {
+//     printRedBackground();
+//   } else if (color === 'blue') {
+//     printBlueBackground();
+//   } else if (color === 'green') {
+//     printGreenBackground();
+//   } else {
+//     printYellowBackground();
+//   }
+// }
 
 //改进后
 
@@ -26,6 +26,10 @@ let colorObj = {
   'yellow': printYellowBackground
 }
 
-if (color in colorObj) {
-  colorObj[color]();
+const Col = color => {
+  if (color in colorObj) {
+    colorObj[color]();
+  }
 }
+
+console.log(Col('yellow'))
